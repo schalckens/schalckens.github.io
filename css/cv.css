@@ -220,3 +220,31 @@ body
     font-size : 1.2em;
     line-height : 1.5em
 }
+
+/*************************************************
+                 Me contacter
+**************************************************/
+
+.meContacter 
+{
+    clear:both;
+}
+.meContacter .details 
+{
+    width : 100%;
+    margin-left : 10px;
+    margin-top : 3px;
+    font-size : 1.5em;
+    font-weigth : 700;
+    justify-content : space-between;
+}
+.contact-icon 
+{
+    filter : grayscale(1);
+    -webkit-filter : grayscale(1);
+    -moz-filter : gayscale(0);
+    -ms-filter : grayscale(0);
+    -o-filter : grayscale(0);
+}
+.meContacter a, .meContacter a:hover {}
+.meContacter a:hover>img {}
