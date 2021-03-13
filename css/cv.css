@@ -246,6 +246,27 @@ body
     -ms-filter : grayscale(0);
     -o-filter : grayscale(0);
 }
+.meContacter a, .meContacter a:hover {}
+.meContacter a:hover>img {}
+
+/**************************************************
+                  Langues
+**************************************************/
+
+#langues .container 
+{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+#langues .langue, #langues .niveau 
+{
+    font-size : 1.3em;
+}
+#langues .langue 
+{
+    padding-top : 3px;
+}
 .meContacter a, .meContacter a:hover 
 {
     text-decoration : none;
