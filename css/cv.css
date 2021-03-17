@@ -135,7 +135,7 @@ body
     background : #eee;
     position : relative;
     padding : 10px 10px 0 10px;
-    border-bottom : 1px solide #ddd;
+    border-bottom : 1px solid #ddd;
     margin : -4px -12px 20px 0;
 }
 #parcours .details::after 
@@ -220,7 +220,30 @@ body
     font-size : 1.2em;
     line-height : 1.5em
 }
+/* Pour empêcher la déformation du parcours scolaire selon la STA*/
 
+@media(min-width: 500px)
+{
+    #experience .lieu {width:10% }
+    #experience .date {width:20%}
+    #experience .details {width:80%}
+}
+@media(min-width: 768px)
+{
+    #parcours .date {width:25%}
+    #parcours .details {width:75%}
+}
+@media(min-width: 992px)
+{
+    #parcours .date {width:17%}
+    #parcours .details {width:83%}
+}
+
+@media(min-width: 1200px)
+{
+    #parcours .date {width:13%}
+    #parcours .details {width:87%}
+}
 /*************************************************
                  Me contacter
 **************************************************/
