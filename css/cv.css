@@ -7,15 +7,28 @@ and open the template in the editor.
     Created on : 19 févr. 2021, 10:35:26
     Author     : valentine.schalckens
 */
+.jumbotron {
+    margin-bottom: 0rem;
+    background-color: #E6E6FA;
+    
+}
 
 body 
 {
     padding-top: 50px;
+    background-color: #E6E6FA;
+    color : #463F32;
 }
 .cadreCV 
 {
     padding-bottom: 15px;
-    background: white;
+    background: #E6E6FA;
+    color : #463F32;
+}
+
+footer 
+{
+    background-color: #CFA0E9; 
 }
 
 /****************************************************************
@@ -34,7 +47,7 @@ body
     border-radius : 50%;
     overflow : hidden;
     padding : 5px;
-    background : #eee;
+    background : #463F32;
     display : inline-block;
 }
 #cv-photo img 
@@ -53,11 +66,11 @@ body
 }
 #cv-intro h1 span 
 {
-    color : rgb(226,0,26);
+    color : #463F32;
 }
 #cv-intro::after 
 {
-    background : url('images/ligne.png'); /*Dossier "images" est un sous-dossier de "css" */
+    background-color : #463F32;
     width : 100%;
     height : 3px;
     margin-top : 15px;
@@ -75,7 +88,7 @@ body
 }
 .rubrique h2 
 {
-    color : rgb(226,0,26);
+    color : #463F32;
 }
 .rubrique h2::before 
 {
@@ -105,7 +118,7 @@ body
     left : 7.8px;
     top : 0;
     display : block;
-    background : linear-gradient(to bottom, #ffffff 0%, #E2001A 7%, #ffffff 100%);
+    background : linear-gradient(to bottom, #ffffff 0%, #CFA0E9 7%, #ffffff 100%);
     content : "";
 }
 #parcours li
@@ -132,7 +145,7 @@ body
 {
     width : 75px;
     display : inline-block;
-    background : #eee;
+    background : #FFACC8;
     position : relative;
     padding : 10px 10px 0 10px;
     border-bottom : 1px solid #ddd;
@@ -220,30 +233,7 @@ body
     font-size : 1.2em;
     line-height : 1.5em
 }
-/* Pour empêcher la déformation du parcours scolaire selon la STA*/
 
-@media(min-width: 500px)
-{
-    #experience .lieu {width:10% }
-    #experience .date {width:20%}
-    #experience .details {width:80%}
-}
-@media(min-width: 768px)
-{
-    #parcours .date {width:25%}
-    #parcours .details {width:75%}
-}
-@media(min-width: 992px)
-{
-    #parcours .date {width:17%}
-    #parcours .details {width:83%}
-}
-
-@media(min-width: 1200px)
-{
-    #parcours .date {width:13%}
-    #parcours .details {width:87%}
-}
 /*************************************************
                  Me contacter
 **************************************************/
@@ -269,8 +259,19 @@ body
     -ms-filter : grayscale(0);
     -o-filter : grayscale(0);
 }
-.meContacter a, .meContacter a:hover {}
-.meContacter a:hover>img {}
+.meContacter a, .meContacter a:hover 
+{
+    text-decoration : none;
+    color : black;
+}
+.meContacter a:hover>img 
+{
+    filter : grayscale(0);
+    -webkit-filter : grayscale(0);
+    -moz-filter : grayscale(0);
+    -ms-filter : grayscale(0);
+    -o-filter : grayscale(0);
+}
 
 /**************************************************
                   Langues
@@ -290,20 +291,17 @@ body
 {
     padding-top : 3px;
 }
-.meContacter a, .meContacter a:hover 
-{
-    text-decoration : none;
-    color : black;
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
 }
-.meContacter a:hover>img 
-{
-    filter : grayscale(0);
-    -webkit-filter : grayscale(0);
-    -moz-filter : grayscale(0);
-    -ms-filter : grayscale(0);
-    -o-filter : grayscale(0);
-}
-
 /*************************************************
                  Compétences
 **************************************************/

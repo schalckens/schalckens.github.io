@@ -27,5 +27,15 @@ and open the template in the editor.
 .jumbotron 
 {
     margin-bottom : 0px;
+    background-color : lightgray; 
 }
 
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: lightgoldenrodyellow;
+    text-align: justify;
+    background-color: lightgray;
+}
