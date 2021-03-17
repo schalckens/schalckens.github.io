@@ -39,11 +39,3 @@ body {
     background-color: #6c757d;
     border-color: #6c757d;
 }
-
-@media (min-width: 1500px) 
-{ 
-    .jumbotron 
-    { 
-        padding: 2rem 30rem; background-color: whitesmoke; 
-    }                   
-}
