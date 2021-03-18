@@ -8,6 +8,11 @@ and open the template in the editor.
     Author     : vscha
 */
 
+.bg-custom 
+{
+    background-color: lightpink!important;
+}
+
 .h1, h1 
 {
     font-size: 2.5rem;
@@ -31,7 +36,6 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
 }
 
 .btn-secondary {
