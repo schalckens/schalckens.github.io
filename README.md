@@ -4,7 +4,7 @@
 
 #### 1. Mettre en oeuvre les technologies web pour créer et héberger mon portfolio
 
-| ![Netbeans]() | ![HTML]() | ![CSS]() | ![Bootstrap]() | ![Git]() | ![Github]() | 
+| ![Netbeans](Favorites/icons8-netbeans-50.png) | ![HTML](Favorites/icons8-html-5-50-2.png) | ![CSS](Favorites/icons8-css3-50.png) | ![Bootstrap](Favorites/icons8-bootstrap-50.png) | ![Git](Favorites/icons8-git-50-3.png) | ![Github](Favorites/icons8-github-50-3.png) | 
 | ------ | ------ | ------ | ------ | ------ | ------ |
 
 - **Netbeans** : Environnement de développement intégré (IDE) utilisé pour le projet
