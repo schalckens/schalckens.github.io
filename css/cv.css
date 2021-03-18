@@ -148,11 +148,11 @@ body {
 #parcours .date .glyphicon-record::before 
 {
     background: #FFFFFF; 
-    font-size : 1.5em;
+    color : #555;
 }
 #parcours .date 
 {
-    width : 325px;
+    width : 75px;
     background-color : rgba(0,0,0,0);
     font-size : 1.5em;
     font-weight : 700;
@@ -160,7 +160,7 @@ body {
 }
 #parcours .details 
 {
-    width : 75px;
+    width : 325px;
     display : inline-block;
     background : linear-gradient(90deg, whitesmoke 0%, whitesmoke 0%, lightblue 60%);;
     position : relative;
