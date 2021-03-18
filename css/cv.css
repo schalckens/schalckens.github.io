@@ -53,11 +53,18 @@ body
 }
 #cv-intro h1 span 
 {
-    color : rgb(226,0,26);
+    background-image: linear-gradient(to left, violet, indigo);  
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+
 }
 #cv-intro::after 
 {
-    background : url('images/ligne.png'); /*Dossier "images" est un sous-dossier de "css" */
+    background : url('images/icones/ligne.png');
+    /*Dossier "images" est un sous-dossier de "css" */
     width : 100%;
     height : 3px;
     margin-top : 15px;
@@ -75,7 +82,12 @@ body
 }
 .rubrique h2 
 {
-    color : rgb(226,0,26);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,35,121,0.7682423311121324) 0%, rgba(0,212,255,1) 93%);   
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+      
 }
 .rubrique h2::before 
 {
@@ -94,7 +106,7 @@ body
 {
     margin-top : 20px;
     position : relative;
-    padding : 1em 0;
+    padding : 2em 0;
     list-style : none;
 }
 #parcours::before 
@@ -105,7 +117,7 @@ body
     left : 7.8px;
     top : 0;
     display : block;
-    background : linear-gradient(to bottom, #ffffff 0%, #E2001A 7%, #ffffff 100%);
+    background : linear-gradient(90deg, rgba(2,0,36,1) 0%, lightblue 0%, lightblue 93%);
     content : "";
 }
 #parcours li
@@ -132,7 +144,7 @@ body
 {
     width : 75px;
     display : inline-block;
-    background : #eee;
+    background : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,35,121,0.7682423311121324) 0%, rgba(0,212,255,1) 93%);
     position : relative;
     padding : 10px 10px 0 10px;
     border-bottom : 1px solid #ddd;
@@ -218,7 +230,7 @@ body
 .experience .details
 {
     font-size : 1.2em;
-    line-height : 1.5em
+    line-height : 1.5em;
 }
 /* Pour empêcher la déformation du parcours scolaire selon la STA*/
 
