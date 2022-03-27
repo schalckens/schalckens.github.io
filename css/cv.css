@@ -13,7 +13,7 @@ and open the template in the editor.
 }
 .jumbotron 
 {
-    background: url("images/sky-411136.jpg");
+    background-color: transparent;
 }
 body {
     margin: 0;
@@ -24,6 +24,8 @@ body {
     color: #212529;
     text-align: left;
     padding-top: 50px;
+    background: url("images/sky-411136.jpg");
+    
 }
 .cadreCV 
 {
@@ -99,12 +101,11 @@ body {
     margin-bottom : 15px;
 }
 .rubrique h2 
-{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,35,121,0.7682423311121324) 0%, rgba(0,212,255,1) 93%);   
+{   
     -webkit-background-clip: text;
     -moz-background-clip: text; 
     background-clip: text;
-    color: transparent;
+    color: lightskyblue;
       
 }
 .rubrique h2::before 
