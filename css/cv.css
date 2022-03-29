@@ -25,6 +25,10 @@ body {
     text-align: left;
     padding-top: 50px;
     background: url("images/sky-411136.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     
 }
 .cadreCV 
@@ -54,7 +58,7 @@ body {
     border-radius : 50%;
     overflow : hidden;
     padding : 5px;
-    background : #eee;
+    background : lightskyblue;
     display : inline-block;
 }
 #cv-photo img 

@@ -18,6 +18,10 @@ h1 {
   margin-top: 25px;
 }
 
+.h3, h3 {
+  text-align: left;
+}
+
 img {
   vertical-align: middle;
   border-style: none;
@@ -48,6 +52,10 @@ body {
 
 .jumbotron {
     background: url("images/feuille12.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .img-blur {
