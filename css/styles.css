@@ -36,12 +36,16 @@ body {
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background: url("images/sky-411136.jpg");
   padding-top: 50px;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .btn-secondary {
@@ -60,4 +64,8 @@ body {
 
 .img-blur {
   filter: blur(2px);
+}
+
+footer {
+  margin-top: 90px;
 }
