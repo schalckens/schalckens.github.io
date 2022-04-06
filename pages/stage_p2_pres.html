@@ -33,10 +33,36 @@ and open the template in the editor.
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="/docs/5.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="../favicon.ico" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/carousel/"
+    />
 
     <!-- Lien vers feuille css -->
     <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
     <title>Portfolio de Valentine SCHALCKENS (BTS SIO 2022) : #</title>
   </head>
@@ -143,6 +169,302 @@ and open the template in the editor.
     </nav>
 
     <!--Contenu-->
+    <div class="jumbotron">
+      <h1 style="text-align:center;"> Dans cette rubrique se trouve la présentation de mon stage de première année dans l'entreprise <strong>UH-Group</strong>. </h1>
+      <br><br>
+      <div>
+        <div class="row featurette">
+          <div class="col-md-10">
+            <h2 class="featurette-heading">Synthèse de stage : </h2>
+            <p>
+              J’ai effectué mon stage au sein de l’entreprise UH-Group, 72 Rue Victor Gélu, 83000 Toulon.
+              L’entreprise est composée de deux gérants dont un informaticien (mon maître de stage : Ugo Bronszewski)
+              ainsi que de deux élèves en alternance. Son secteur d’activité est l’édition de logiciels applicatifs. Le stage
+              était en distanciel dû à la situation sanitaire et nous n’avions pas de matériel fourni.
+              Le but principal de mon stage était de continuer à alimenter les fondations de l’application UH
+              Lawyers composée de plusieurs fonctionnalités dont la cible sont les cabinets d’avocats et les avocats euxmêmes. Lors du stage nous étions beaucoup en autonomie et nous faisions une réunion chaque matin à 9h
+              pour présenter nos avancées et planifier les activités sur le Trello de l’entreprise (1.4 Travailler en mode
+              projet).
+              Ainsi j’ai travaillé sur :
+              <ul>
+                <li>
+                  La finalisation de l’Add-In Word (Panel ajouté à l’application Word proposant différentes
+                  fonctionnalités) commencé en première année:
+                  <ul>
+                    <li>
+                      Reprise du projet, amélioration graphique et finalisation des fonctionnalités :
+                      <ul>
+                        <li>ajout au document de “champs de fusion” qui seront remplacés automatiquement
+                          lors de l’upload sur l’application UH Lawyers</li>
+                        <li>ajout au document de paragraphes pré-enregistrés provenant de la base de
+                            données de l’application.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  La réalisation d’un projet de test sur Laravel(Framework PHP) et de ses évolutions selon le besoin du
+                  stage:
+                  <ul>
+                    <li>utilisation de Jetstream (‘Starter Kit’ Laravel qui ajoute au projet tous les éléments
+                      nécessaires pour avoir une application avec un système d’authentification (register et login)
+                      et une interface utilisateur (dashboard et profil) pour partir sur un système d’authentification
+                      fonctionnel.</li>
+                    <li>implémentation du code nécessaire aux fonctionnalités demandées par mon maître de stage
+                      (gestion des champs de fusion, conversion d’un document au format docx en pdf, système de
+                      parrainage et système de paiement).</li>
+                  </ul>
+                </li>
+                <li>
+                  L’initiation à PHPWord (librairie entièrement PHP qui permet de lire et d'écrire sur différent format de
+                  fichier (ici ce sera Microsoft Office Word)) et test d’utilisation avec l’application de test :
+                  <ul>
+                    <li>Uilisation de cette librairie sur les documents word que les utilisateurs upload sur
+                      l’application UH Lawyers et remplacement des “champs de fusion” grâce à la classe
+                      “TemplateProcessor” de la librairie.</li>
+                  </ul>
+                </li>
+                <li>
+                  La fonctionnalité de conversion d’un fichier docx en PDF avec l’application :
+                  <ul>
+                    <li>Test de différentes manières de procéder : conversion totale en php avec l’utilisation du
+                      package TCPDF et conversion grâce à un script Python exécuté depuis l’application. Après
+                      plusieurs recherches la première méthode n’était pas adaptée, car même si le pdf arrivait à
+                      être convertit le pdf perdrait les informations de style ainsi que les images, les vidéos …</li>
+                  </ul>
+                </li>
+                <li>
+                  La fonctionnalité d’ajout d’un filigrane sur un fichier PDF :
+                  <ul>
+                    <li>Utilisation des packages PHP FPDF et FPDI (collections de classes qui permettent la lecture et
+                    la manipulation de fichier pdf) pour l’ajout d’un filigrane indiquant le numéro de dossier
+                    auquel appartient le pdf.</li>
+                  </ul>
+                </li>
+                <li>
+                  Le développement d’un système de parrainage :
+                  <ul>
+                    <li>Réalisation d’un schéma de base de données.</li>
+                    <li>Création d’un lien de parrainage unique qui correspond à un utilisateur, lorsqu’un autre
+                      utilisateur passe par ce lien l’association parrain-parrainé est alors enregistrée en base de
+                      données.</li>
+                      <li>Par le déclenchement d’un événement lors de la création de l’association parrain-parrainé,
+                        un certain nombre de ‘crédits’ leur sont attribués comme récompense. Le nombre de crédits
+                        obtenus est enregistré en base de données.</li>
+                  </ul>
+                </li>
+                <li>
+                  Le développement d’un système de paiement avec l’API Stripe :
+                  <ul>
+                    <li>Création du système de paiement incluant 3 acteurs : le client de l'avocat, l'avocat et la
+                      plateforme en utilisant Stripe Connect.</li>
+                    <li> Évolution sur les choix de paiement : premièrement uniquement par carte bancaire puis
+                      ajout du paiement par virement SEPA.</li>
+                      <li>Enregistrement en base de données d’une partie des coordonnées bancaires : pour faciliter
+                        la saisie d’information mais surtout pour pouvoir informer les clients lorsque leur carte arrive
+                        à expiration.</li>
+                        <li>Utilisation de Task Scheduling (planificateur de commande de Laravel, permet la gestion de
+                          tâche) pour effectuer la tâche suivante : Tous les 15 de chaque mois les dates d’expiration
+                          des cartes enregistrées sont parcourus, si la date d’expiration est égale au mois suivant
+                          l’utilisateur auquel est associé cette carte bancaire doit recevoir un email d’alerte.  </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="lead" style="text-align: right;">
+                <a class="btn btn-secondary" href="../PDF/Document_produits/SynthèseStage2022.pdf" target="_blank" role="button"
+                  >Afficher la Synthèse (PDF)</a
+                >
+              </p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div>
+        <h2>Projets :</h2>
+      </div>
+      <div class="container">
+
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="img-blur"
+              src="../images/codeAddIn.PNG"
+              alt="#"
+              style="width: 100%; height: 100%"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            />
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1> Add-In Word </h1>
+                <p>
+                  Création d'un Add-In permettant de remplir un document word
+                  de facon simplifié.
+                </p>
+                <p>
+                  <a class="btn btn-secondary" target="_blank" role="button" href="stage1/addIn.html"
+                    >En savoir plus ...</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="img-blur"
+                src="../images/testL_coderand.png"
+                alt="#"
+                style="width: 100%; height: 100%"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+            </div>
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Application de test PHP avec le Framework Laravel 8</h1>
+                <p style="color: white">
+                  Application créée dans le but de mettre en oeuvre les missions données 
+                  par le maître de stage en vue d'une possible intégration future au projet 
+                  final qu'est UH Lawyer.
+                </p>
+                <p>
+                  <a class="btn btn-secondary" href="stage2/testLarav.html" target="_blank" role="button"
+                    >En savoir plus ...</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="img-blur"
+                src="../images/sysPr_coderand.PNG"
+                alt="#"
+                style="width: 100%; height: 100%"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Système de parrainage en PHP</h1>
+                  <p>
+                    Rechercher comment réaliser un système de parrainage en faire une représentation 
+                    en schéma de base de données puis le mettre en place.
+                  </p>
+                  <p>
+                    <a
+                      class="btn btn-secondary" target="_blank" role="button"
+                      href="stage2/sysParrain.html"
+                      >En savoir plus ...</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="img-blur"
+                src="../images/sysPm_coderand.PNG"
+                alt="#"
+                style="width: 100%; height: 100%"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Système de Paiement</h1>
+                  <p>
+                    Parcourir la documentation de Stripe. Puis à l'aide de son API et de Stripe Connect 
+                    mettre en place un système de paiement ou la plateforme n'apparait et n'intervient pas sur le 
+                    paiement entre nos clients et leurs clients. Rendre c'est paiemnt possible par carte bancaire 
+                    et par virement SEPA.
+                  </p>
+                  <p>
+                    <a
+                      class="btn btn-secondary" target="_blank" role="button"
+                      href="stage2/sysPaiement.html"
+                      >En savoir plus ...</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="featurette-divider" />
+      <div>
+        <h1>Documentation :</h1>
+      </div>
+
+      <br>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class=freature-heading>Rapports de stages</h2>
+          <p class="lead">
+            Dans le cadre de ce stage de première année, nos enseignants nous ont demandés de rédiger un rapports de stage toutes 
+            les semaines sur nos activités. Ci-dessous ce trouve les dis rapports, ils comportent les tâches effectuées lors du stage
+            ainsi que de la documentation en rapport avec les outils et les technologies utilisées.
+          </p>
+          <div class="dropdown">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+              Rapports par semaine
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../PDF/Document_produits/2022_semaine_1.pdf">Semaine n°1</a>
+              <a class="dropdown-item" href="../PDF/Document_produits/2022_semaine_2.pdf">Semaine n°2</a>
+              <a class="dropdown-item" href="../PDF/Document_produits/2022_semaine_3.pdf">Semaine n°3</a>
+              <a class="dropdown-item" href="../PDF/Document_produits/2022_semaine_4.pdf">Semaine n°4</a>
+              <a class="dropdown-item disabled" href="">Semaine n°5</a>
+              <a class="dropdown-item disabled" href="">Semaine n°6</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img
+            class=""
+            style="width: 200px; height: 200px; margin-left: 180px;"
+            src="../images/documents.png"
+            role="img"
+            alt="#"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+    </div>
+
     <!--Footer-->
     <footer>
       <div class="container">

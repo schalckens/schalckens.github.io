@@ -170,19 +170,74 @@ and open the template in the editor.
 
     <!--Contenu-->
     <div class="jumbotron">
+      <h1 style="text-align:center;"> Dans cette rubrique se trouve la présentation de mon stage de première année dans l'entreprise <strong>Cofline</strong>. </h1>
+      <br><br>
       <div>
         <div class="row featurette">
           <div class="col-md-10">
-            <h2 class="featurette-heading">Présentation </h2>
-            <p class="lead">
-              J’ai effectué mon stage avec l’entreprise Cofline (devenu UH groupe), 72 Rue Victor Gélu,
-              83000 Toulon. L’entreprise est composée de deux gérants dont un informaticien, son secteur
-              d’activité étant l’édition de logiciels applicatifs. Le stage était en distanciel dû à la situation sanitaire
-              et nous n’avions pas de matériel fourni. Nous étions trois stagiaires avec un maître de stage : Ugo
-              Bronszewski (Gérant). Le but principal de notre stage était de travailler sur les fondations de
-              l’application UH Lawyers composés de plusieurs fonctionnalités dont la cible sont les cabinets
-              d’avocats et les avocats eux-mêmes. Lors du stage nous étions beaucoup en autonomie et nous
-              faisions une réunion chaque matin pour présenter nos avancées.
+            <h2 class="featurette-heading">Synthèse de stage : </h2>
+            <p>
+              J’ai effectué mon stage avec l’entreprise <strong>Cofline</strong> (devenu UH-Group), 72 Rue Victor Gélu, 83000 Toulon. L’entreprise est 
+              composée de deux gérants dont un informaticien, son secteur d’activité étant l’édition de logiciels applicatifs. Le stage était en 
+              distanciel dû à la situation sanitaire et nous n’avions pas de matériel fourni. Nous étions trois stagiaires avec un maître de 
+              stage : <strong>Ugo Bronszewski</strong> (Gérant). Le but principal de notre stage était de travailler sur les fondations de l’application <strong> UH Lawyers </strong>
+              composés de plusieurs fonctionnalités dont la cible sont les cabinets d’avocats et les avocats eux-mêmes. Lors du stage nous étions 
+              beaucoup en autonomie et nous faisions une réunion chaque matin pour présenter nos avancées.
+              Pour cela nous avons effectué les tâches suivantes (par ordre chronologique) :
+              <ul>
+                <li> Veille informatique sur le Framework PHP <strong>Laravel 8</strong> avec des vidéos de Nord Coders et la documentation Laravel. </li>
+                <li> Travail sur le schéma de la Base de Données Relationnelle de UH Lawyers (utilisation du site QuickDBD). </li>
+                <li>
+                  Création d’une <strong>API Laravel 8</strong> avec l’aide de <strong>Laragon</strong> sur l’IDE <strong>Visual Studio Code</strong>:
+                  <ul>
+                    <li>Utilisation de <strong>php artisan</strong> pour la création des fichiers.</li>
+                    <li>Implémentations des migrations (lien à la BDD de Laragon (Serveur de développement web)).</li>
+                    <li>Mise en place de la méthode <strong>CRUD</strong> : implémentation des méthodes create, store, show, edit, update et destroy.</li>
+                    <li>Implémentation des routes.</li>
+                    <li>Implémentation des Models, Views et Controllers selon <strong>l’architecture MVC.</strong></li>
+                    <li>Implémentation des <strong>tests unitaires (PHPUnit).</strong></li>
+                    <li>Résolution d’erreur rencontrée, en particulier les erreurs de Token d’authentification et des exceptions levées.</li>
+                    <li>Implémentation des <strong>factories</strong> (fausses données générées automatiquement pour effectuer les tests), utilisation de la bibliothèque faker.</li>
+                  </ul>
+                </li>
+                <li>
+                  Introduction à <strong>ReactJs</strong> ( Bibliothèque JavaScript ) et création de projet:
+                  <ul>
+                    <li>Suivi du tutoriel d’introduction sur le site de ReactJs.</li>
+                    <li>Implémentation d’un projet similaire à l’application Laravel (Entraînement).</li>
+                    <li>Recherche sur la persistance des données avec l’application ReactJs (JSON).</li>
+                    <li>Utilisation de deux méthodes pour les composants React : par classe ou par fonction.</li>
+                    <li>Utilisation de <strong>JSX</strong> et du framework <strong>TailwindCSS.</strong></li>
+                  </ul>
+                </li>
+                <li>
+                  Création d’un clone de <strong> Google Docs</strong> ( volonté de l'ajouter aux fonctionnalités de l’application UH Lawyers) :
+                  <ul>
+                    <li>Recherche sur différente technologies : <strong> Socket.IO, MongoDB, Quill, UUID</strong> (cf. Rapport de stage semaine n°4).</li>
+                    <li>Suivi d’un tutoriel trouvé sur YouTube de Web Dev Simplified.</li>
+                    <li>Implémentation du clone de Google Docs.</li>
+                  </ul>
+                </li>
+                <li>
+                  Création d’un <strong> Add-In Word</strong> dans le but de le relier à notre API Laravel:
+                  <ul>
+                    <li>Travail de recherche sur comment créer un Add-In Word.</li>
+                    <li>Suivi du tutoriel fourni par la <strong>documentation Microsoft</strong> et du même tutoriel présent sur GitHub.</li>
+                    <li>Utilisation de Yeoman Generator pour la création du projet.</li>
+                    <li>Travail de recherche sur comment le relier à notre API (utilisation du package Axios).</li>
+                    <li>Travail de recherche pour savoir s’il est possible d’insérer du contenu HTML provenant de l’API dans un document grâce à l’Add-In.</li>
+                    <li>Travail de recherche pour savoir s’il est possible d’avoir différents panneaux à l’intérieur de l’interface de l’Add-In. (Remplacer par le point suivant)</li>
+                    <li>Travail de recherche sur comment faire des sections qui s’affiche lorsqu'on clique dessus (avec une futur amélioration incluant la gestion de connexion des avocats) : Toggle Bar.</li>
+                    <li>Implémentation et tests de ces modifications.</li>
+                    <li>Résolution des problèmes rencontrés : notamment le fait que l’Add-In n’accepte pas les liens d’API en protocole HTTP mais seulement ceux en HTTPS.</li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="lead" style="text-align: right;">
+                <a class="btn btn-secondary" href="../PDF/Synthese_Stage_2021.pdf" target="_blank" role="button"
+                  >Afficher la Synthèse (PDF)</a
+                >
+              </p>
             </p>
           </div>
         </div>
@@ -199,7 +254,7 @@ and open the template in the editor.
             <div class="carousel-item active">
               <img
                 class="img-blur"
-                src="../../images/codeApiUH.PNG"
+                src="../images/codeApiUH.PNG"
                 alt="#"
                 style="width: 100%; height: 100%"
                 aria-hidden="true"
@@ -212,7 +267,7 @@ and open the template in the editor.
               <div class="carousel-caption text-start">
                 <h1>API UH Lawyer</h1>
                 <p style="color: white">
-                  API créer dans le but d'être relié à une futur application
+                  API créée dans le but d'être relié à une futur application
                   React destiné aux Avocat et à leur gestion de facture,
                   clients, dossiers etc...
                 </p>
@@ -231,7 +286,7 @@ and open the template in the editor.
             <div class="carousel-item active">
               <img
                 class="img-blur"
-                src="../../images/codeAppReact.PNG"
+                src="../images/codeAppReact.PNG"
                 alt="#"
                 style="width: 100%; height: 100%"
                 aria-hidden="true"
@@ -265,7 +320,7 @@ and open the template in the editor.
             <div class="carousel-item active">
               <img
                 class="img-blur"
-                src="../../images/codeAddIn.PNG"
+                src="../images/codeAddIn.PNG"
                 alt="#"
                 style="width: 100%; height: 100%"
                 aria-hidden="true"
@@ -275,7 +330,7 @@ and open the template in the editor.
 
               <div class="container">
                 <div class="carousel-caption">
-                  <h1>Add-In Word (module Word)</h1>
+                  <h1>Add-In Word</h1>
                   <p>
                     Création d'un Add-In permettant de remplir un document word
                     de facon simplifié.
@@ -328,29 +383,6 @@ and open the template in the editor.
       <hr class="featurette-divider" />
       <div>
         <h1>Documentation :</h1>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Synthèse de stage</h2>
-          <p class="lead">
-            Synthèse regroupant les activités effectuer lors du stage et les outils utilisés. <br />
-            <a class="btn btn-secondary" href="../PDF/Synthese_Stage_2021.pdf" target="_blank" role="button"
-              >Afficher la Synthèse (PDF)</a
-            >
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img
-            class=""
-            style="width: 200px; height: 200px; margin-left: 180px;"
-            src="../images/documents.png"
-            role="img"
-            alt="#"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          />
-        </div>
       </div>
 
       <br>
